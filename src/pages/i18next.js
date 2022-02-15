@@ -133,7 +133,7 @@ i18n
           asia: {
             continentDataText:
               "Asia is the largest of the continents, both in area and population. In Asia you will find some of the oldest cultures in the world, incredible architectural designs and beautiful natural landscapes. Each region is more fascinating than the next!",
-            continentDataPopulation: "4.5bi",
+            continentDataPopulation: "{{total}}bi",
             city1: "Dubai",
             country1: "UAE",
             city2: "Istanbul",

@@ -25,7 +25,7 @@ export default function Asia() {
                 text={t('asia.continentDataText')}
                 numberCountries={50}
                 numberLanguages={72}
-                numberPopulation={t('asia.continentDataPopulation')}
+                numberPopulation={t('asia.continentDataPopulation', { total: 4.5 })}
             ></ContinentData>
             <Cities/>
             <Flex w="100%" flexWrap={'wrap'} p="20px 60px">

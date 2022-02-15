@@ -7,12 +7,10 @@
     <p>A proposta do desafio foi desenvolver uma aplicação usando Chakra UI. A aplicação foi criada do zero e a interface foi implementada conforme o layout do Figma.
     Utilizei ReactJS, NextJS, TypeScript, Chakra UI e Swiper.</p>
 </div>
-<div>
+<div align="center">
     <h3>Screenshot</h3>
     <br>
-    <img src="/public/readme/landpage.png">
+    <img src="/public/img/readme/landpage.png">
     <br>
-    <img src="/public/readme/continent.png">
-    <br>
-    <img src="/public/readme/cities.png">
+    <img src="/public/img/readme/continent.png">
 </div>

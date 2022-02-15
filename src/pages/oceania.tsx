@@ -3,8 +3,14 @@ import { Card } from "../components/Card";
 import { ContinentCover } from "../components/ContinentCover";
 import { ContinentData } from "../components/ContinentData";
 import { Header } from "../components/Header";
+import images from '../assets/images';
+import { Cities } from "../components/Cities";
+import './i18next';
+import { useTranslation } from "react-i18next";
 
 export default function Oceania() {
+    const { t, i18n } = useTranslation();
+
     return (
         <Flex
             direction="column"
@@ -13,24 +19,20 @@ export default function Oceania() {
             w="100%"
             maxW={{ md:"800px", lg: "1000px" }}
         >
-            <Header></Header>
-            <ContinentCover continentpic="../../continents/worldtrip_australia.jpg" continent="Oceania"></ContinentCover>
+            <Header/>
+            <ContinentCover continentpic={images.continents.oceania} continent={t('continentOceania')}></ContinentCover>
             <ContinentData
-                text={"A Oceania é uma região composta por vários grupos de ilhas no oceano Pacífico. E é claro que o continente atrai surfistas, mergulhadores e amantes de praias! A Oceania é o continente perfeito para apreciar as maravilhas da natureza."}
+                text={t('oceania.continentDataText')}
                 numberCountries={14}
                 numberLanguages={21}
-                numberPopulation={"37mi"}
+                numberPopulation={t('oceania.continentDataPopulation')}
             ></ContinentData>
-            <Box w="100%" align="left" p="10px 50px">
-                <Text textColor={"gray.600"} fontWeight="bold" fontSize={"4xl"}>
-                    Cidades
-                </Text>
-            </Box>
+            <Cities/>
             <Flex w="100%" flexWrap={'wrap'} p="20px 60px">
-                <Card citypic="../../cities/apia.jpg" city="Apia" country="Samoa" flag="../../flags/samoa.png"></Card>
-                <Card citypic="../../cities/suva.jpg" city="Suva" country="Fiji" flag="../../flags/fiji.png"></Card>
-                <Card citypic="../../cities/sydney.jpg" city="Sydney" country="Australia" flag="../../flags/australia.png"></Card>
-                <Card citypic="../../cities/wellington.jpg" city="Wellington" country="Nova Zelândia" flag="../../flags/new_zealand.png"></Card>
+                <Card citypic={images.cities.apia} city={t('oceania.city1')} country={t('oceania.country1')} flag={images.flags.samoa}></Card>
+                <Card citypic={images.cities.suva} city={t('oceania.city2')} country={t('oceania.country2')} flag={images.flags.fiji}></Card>
+                <Card citypic={images.cities.sydney} city={t('oceania.city3')} country={t('oceania.country3')} flag={images.flags.australia}></Card>
+                <Card citypic={images.cities.wellington} city={t('oceania.city4')} country={t('oceania.country4')} flag={images.flags.newzeland}></Card>
             </Flex>
         </Flex>
     )

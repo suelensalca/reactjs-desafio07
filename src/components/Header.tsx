@@ -1,11 +1,10 @@
-import { Box, Image } from "@chakra-ui/react";
+import { Image } from "@chakra-ui/react";
+import images from '../assets/images';
 
 export function Header() {
     return (
-        <Box>
-            <a href="/">
-                <Image p="22px 0px" src='../../Logo.png' />
-            </a>
-        </Box>
+        <a href="/">
+            <Image p="22px 0px" src={images.logo} />
+        </a>
     )
 }

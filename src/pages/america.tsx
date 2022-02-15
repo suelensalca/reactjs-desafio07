@@ -1,10 +1,16 @@
-import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 import { Card } from "../components/Card";
 import { ContinentCover } from "../components/ContinentCover";
 import { ContinentData } from "../components/ContinentData";
 import { Header } from "../components/Header";
+import images from '../assets/images';
+import { Cities } from "../components/Cities";
+import './i18next';
+import { useTranslation } from "react-i18next";
 
 export default function America() {
+    const { t, i18n } = useTranslation();
+
     return (
         <Flex
             direction="column"
@@ -13,24 +19,20 @@ export default function America() {
             w="100%"
             maxW={{ md:"800px", lg: "1000px" }}
         >
-            <Header></Header>
-            <ContinentCover continentpic="../../continents/worldtrip_rio.jpg" continent="América"></ContinentCover>
+            <Header/>
+            <ContinentCover continentpic={images.continents.america} continent={t('continentAmerica')}></ContinentCover>
             <ContinentData
-                text={"O continente americano é a maior massa terrrestre do planeta no sentido norte-sul. Isso permite centenas de lugares incríveis para conhecer, com uma riqueza de climas, paisagens e cultura! Das antigas cidades do Peru à agitada Nova York, temos lugares para todos os gostos."}
+                text={t('america.continentDataText')}
                 numberCountries={35}
                 numberLanguages={37}
-                numberPopulation={"935mi"}
+                numberPopulation={t('america.continentDataPopulation')}
             ></ContinentData>
-            <Box w="100%" align="left" p="10px 50px">
-                <Text textColor={"gray.600"} fontWeight="bold" fontSize={"4xl"}>
-                    Cidades
-                </Text>
-            </Box>
+            <Cities/>
             <Flex w="100%" flexWrap={'wrap'} p="20px 60px">
-                <Card citypic="../../cities/new_york.jpg" city="Nova York" country="EUA" flag="../../flags/usa.png"></Card>
-                <Card citypic="../../cities/rio.jpg" city="Rio de Janeiro" country="Brasil" flag="../../flags/brazil.png"></Card>
-                <Card citypic="../../cities/lima.jpg" city="Lima" country="Peru" flag="../../flags/peru.png"></Card>
-                <Card citypic="../../cities/toronto.jpg" city="Toronto" country="Canada" flag="../../flags/canada.png"></Card>
+                <Card citypic={images.cities.newyork} city={t('america.city1')} country={t('america.country1')} flag={images.flags.usa}></Card>
+                <Card citypic={images.cities.rio} city={t('america.city2')} country={t('america.country2')} flag={images.flags.brazil}></Card>
+                <Card citypic={images.cities.lima} city={t('america.city3')} country={t('america.country3')} flag={images.flags.peru}></Card>
+                <Card citypic={images.cities.toronto} city={t('america.city4')} country={t('america.country4')} flag={images.flags.canada}></Card>
             </Flex>
         </Flex>
     )

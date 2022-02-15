@@ -3,8 +3,14 @@ import { Card } from "../components/Card";
 import { ContinentCover } from "../components/ContinentCover";
 import { ContinentData } from "../components/ContinentData";
 import { Header } from "../components/Header";
+import images from '../assets/images';
+import { Cities } from "../components/Cities";
+import './i18next';
+import { useTranslation } from "react-i18next";
 
 export default function Asia() {
+    const { t, i18n } = useTranslation();
+
     return (
         <Flex
             direction="column"
@@ -13,24 +19,20 @@ export default function Asia() {
             w="100%"
             maxW={{ md:"800px", lg: "1000px" }}
         >
-            <Header></Header>
-            <ContinentCover continentpic="../../continents/worldtrip_japan.jpg" continent="Ásia"></ContinentCover>
+            <Header/>
+            <ContinentCover continentpic={images.continents.asia} continent={t('continentAsia')}></ContinentCover>
             <ContinentData
-                text={"A Ásia é o maior dos continentes, tanto em área como em população. Na Ásia você encontra algumas das culturas mais antigas do mundo, projetos arquitetônicos incríveis e lindas paisagens naturais. Cada região é mais fascinante que a outra!"}
+                text={t('asia.continentDataText')}
                 numberCountries={50}
                 numberLanguages={72}
-                numberPopulation={"4.5bi"}
+                numberPopulation={t('asia.continentDataPopulation')}
             ></ContinentData>
-            <Box w="100%" align="left" p="10px 50px">
-                <Text textColor={"gray.600"} fontWeight="bold" fontSize={"4xl"}>
-                    Cidades
-                </Text>
-            </Box>
+            <Cities/>
             <Flex w="100%" flexWrap={'wrap'} p="20px 60px">
-                <Card citypic="../../cities/dubai.jpg" city="Dubai" country="UAE" flag="../../flags/uae.png"></Card>
-                <Card citypic="../../cities/istanbul.jpg" city="Istanbul" country="Turquia" flag="../../flags/turkey.png"></Card>
-                <Card citypic="../../cities/shanghai.jpg" city="Shanghai" country="China" flag="../../flags/china.png"></Card>
-                <Card citypic="../../cities/tokyo.jpg" city="Tóquio" country="Japao" flag="../../flags/japan.png"></Card>
+                <Card citypic={images.cities.dubai} city={t('asia.city1')} country={t('asia.country1')} flag={images.flags.uae}></Card>
+                <Card citypic={images.cities.istanbul} city={t('asia.city2')} country={t('asia.country2')} flag={images.flags.turkey}></Card>
+                <Card citypic={images.cities.shanghai} city={t('asia.city3')} country={t('asia.country3')} flag={images.flags.china}></Card>
+                <Card citypic={images.cities.tokyo} city={t('asia.city4')} country={t('asia.country4')} flag={images.flags.japan}></Card>
             </Flex>
         </Flex>
     )

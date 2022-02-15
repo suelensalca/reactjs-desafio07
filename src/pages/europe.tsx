@@ -3,8 +3,14 @@ import { Card } from "../components/Card";
 import { ContinentCover } from "../components/ContinentCover";
 import { ContinentData } from "../components/ContinentData";
 import { Header } from "../components/Header";
+import images from '../assets/images';
+import { Cities } from "../components/Cities";
+import './i18next';
+import { useTranslation } from "react-i18next";
 
 export default function Europe() {
+    const { t, i18n } = useTranslation();
+
     return (
         <Flex
             direction="column"
@@ -13,24 +19,20 @@ export default function Europe() {
             w="100%"
             maxW={{ md:"800px", lg: "1000px" }}
         >
-            <Header></Header>
-            <ContinentCover continentpic="../../continents/worldtrip_venice.jpg" continent="Europa"></ContinentCover>
+            <Header/>
+            <ContinentCover continentpic={images.continents.europe} continent={t('continentEurope')}></ContinentCover>
             <ContinentData
-                text={"A Europa é um continente cheio de história, cultura e belezas naturais. Além disso, a proximidade dos países permite explorar novas culturas e lugares em uma viagem!"}
+                text={t('europe.continentDataText')}
                 numberCountries={44}
                 numberLanguages={24}
-                numberPopulation={"742mi"}
+                numberPopulation={t('europe.continentDataPopulation')}
             ></ContinentData>
-            <Box w="100%" align="left" p="10px 50px">
-                <Text textColor={"gray.600"} fontWeight="bold" fontSize={"4xl"}>
-                    Cidades
-                </Text>
-            </Box>
+            <Cities/>
             <Flex w="100%" flexWrap={'wrap'} p="20px 60px">
-                <Card citypic="../../cities/rome.jpg" city="Roma" country="Itália" flag="../../flags/italy.png"></Card>
-                <Card citypic="../../cities/athens.jpg" city="Atenas" country="Grécia" flag="../../flags/greece.png"></Card>
-                <Card citypic="../../cities/london.jpg" city="Londres" country="Inglaterra" flag="../../flags/england.png"></Card>
-                <Card citypic="../../cities/paris.jpg" city="Paris" country="Franca" flag="../../flags/france.png"></Card>
+                <Card citypic={images.cities.rome} city={t('europe.city1')} country={t('europe.country1')} flag={images.flags.italy}></Card>
+                <Card citypic={images.cities.athens} city={t('europe.city2')} country={t('europe.country2')} flag={images.flags.greece}></Card>
+                <Card citypic={images.cities.london} city={t('europe.city3')} country={t('europe.country3')} flag={images.flags.england}></Card>
+                <Card citypic={images.cities.paris} city={t('europe.city4')} country={t('europe.country4')} flag={images.flags.france}></Card>
             </Flex>
         </Flex>
     )

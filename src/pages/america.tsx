@@ -25,7 +25,7 @@ export default function America() {
                 text={t('america.continentDataText')}
                 numberCountries={35}
                 numberLanguages={37}
-                numberPopulation={t('america.continentDataPopulation')}
+                numberPopulation={t('america.continentDataPopulation', { total: 935 })}
             ></ContinentData>
             <Cities/>
             <Flex w="100%" flexWrap={'wrap'} p="20px 60px">

@@ -25,7 +25,7 @@ export default function Europe() {
                 text={t('europe.continentDataText')}
                 numberCountries={44}
                 numberLanguages={24}
-                numberPopulation={t('europe.continentDataPopulation')}
+                numberPopulation={t('europe.continentDataPopulation', { total: 742 })}
             ></ContinentData>
             <Cities/>
             <Flex w="100%" flexWrap={'wrap'} p="20px 60px">

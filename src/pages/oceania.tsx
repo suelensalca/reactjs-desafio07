@@ -25,7 +25,7 @@ export default function Oceania() {
                 text={t('oceania.continentDataText')}
                 numberCountries={14}
                 numberLanguages={21}
-                numberPopulation={t('oceania.continentDataPopulation')}
+                numberPopulation={t('oceania.continentDataPopulation', { total: 37 })}
             ></ContinentData>
             <Cities/>
             <Flex w="100%" flexWrap={'wrap'} p="20px 60px">

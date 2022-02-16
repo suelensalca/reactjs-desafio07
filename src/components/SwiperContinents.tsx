@@ -20,24 +20,34 @@ export function SwiperContinents() {
   return (
       <Swiper id="swiper-color" cssMode={true} navigation={true} pagination={true} mousewheel={true} keyboard={true} className="mySwiper">
         <SwiperSlide>
-          <Image filter={"brightness(75%)"} src={images.continents.america}/>
-          <a href="/america" className="center">{t('continentAmerica')}</a>
+          <a href="/america">
+            <Image position={"relative"} filter={"brightness(75%)"} src={images.continents.america}/>
+            <text className="center">{t('continentAmerica')}</text>
+          </a>
         </SwiperSlide>
         <SwiperSlide>
-          <Image filter={"brightness(75%)"} src={images.continents.asia}/>
-          <a href="/asia" className="center">{t('continentAsia')}</a>
+          <a href="/asia">
+            <Image filter={"brightness(75%)"} src={images.continents.asia}/>
+            <text className="center">{t('continentAsia')}</text>
+          </a>
         </SwiperSlide>
         <SwiperSlide>
-          <Image filter={"brightness(75%)"} src={images.continents.europe}/>
-          <a href="/europe" className="center">{t('continentEurope')}</a>
+          <a href="/europe">
+            <Image filter={"brightness(75%)"} src={images.continents.europe}/>
+            <text className="center">{t('continentEurope')}</text>
+          </a>
         </SwiperSlide>
         <SwiperSlide>
-          <Image filter={"brightness(75%)"} src={images.continents.africa}/>
-          <a href="africa" className="center">{t('continentAfrica')}</a>
+          <a href="africa">
+            <Image filter={"brightness(75%)"} src={images.continents.africa}/>
+            <text className="center">{t('continentAfrica')}</text>
+          </a>
         </SwiperSlide>
         <SwiperSlide>
-          <Image filter={"brightness(75%)"} src={images.continents.oceania}/>
-          <a href="oceania" className="center">{t('continentOceania')}</a>
+          <a href="oceania">
+            <Image filter={"brightness(75%)"} src={images.continents.oceania}/>
+            <text className="center">{t('continentOceania')}</text>
+          </a>
         </SwiperSlide>
       </Swiper>
   )

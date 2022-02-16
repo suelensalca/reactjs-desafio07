@@ -31,17 +31,20 @@ export default function Home() {
       <Box p="40px 0px 20px 0px" align="center">
         <Text textColor={"gray.600"} fontWeight="medium">{t('landpage.part1')}<br/>{t('landpage.part2')}<br/>{t('landpage.part3')}</Text>
       </Box>
-      <Box p="20px 0px 40px 0px" maxW={{ md:"600px", lg: "800px"}}>
+      <Box p="20px 0px 20px 0px" maxW={{ md:"600px", lg: "800px"}}>
         <SwiperContinents />
       </Box>
-      <Box p="20px">
+      <Box p="20px 0px 40px 0px">
         {Object.keys(lngs).map((lng) => (
           <Button 
             m="10px"
             key={lng} 
-            style={{ fontWeight: i18n.resolvedLanguage === lng ? 'bold' : 'normal' }} 
+            size="sm"
+            colorScheme="yellow"
             type="submit" 
-            onClick={() => i18n.changeLanguage(lng)}>{lngs[lng].nativeName}
+            onClick={() => i18n.changeLanguage(lng)}
+          >
+            {lngs[lng].nativeName}
           </Button>
         ))}
       </Box>

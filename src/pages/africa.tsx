@@ -25,7 +25,7 @@ export default function Africa() {
                 text={t('africa.continentDataText')}
                 numberCountries={54}
                 numberLanguages={31}
-                numberPopulation={t('africa.continentDataPopulation')}
+                numberPopulation={t('africa.continentDataPopulation', { total: 1.2 })}
             ></ContinentData>
             <Cities />
             <Flex w="100%" flexWrap={'wrap'} p="20px 60px">

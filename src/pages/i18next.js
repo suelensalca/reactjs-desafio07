@@ -6,7 +6,7 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    debug: true,
+    debug: false,
     fallbackLng: "pt",
     interpolation: {
       escapeValue: false,
@@ -23,7 +23,7 @@ i18n
           africa: {
             continentDataText:
               "O continente africano é conhecido por sua diversidade natural e paisagens, e é rico em história e cultura. De safaris e excursões à resorts e grandes cidades, a África possui turismo para todos os gostos!",
-            continentDataPopulation: "1.2bi",
+            continentDataPopulation: "{{total}}bi",
             city1: "Cairo",
             country1: "Egito",
             city2: "Cidade do Cabo",
@@ -36,7 +36,7 @@ i18n
           america: {
             continentDataText:
               "O continente americano é a maior massa terrrestre do planeta no sentido norte-sul. Isso permite centenas de lugares incríveis para conhecer, com uma riqueza de climas, paisagens e cultura! Das antigas cidades do Peru à agitada Nova York, temos lugares para todos os gostos.",
-            continentDataPopulation: "935mi",
+            continentDataPopulation: "{{total}}mi",
             city1: "Nova York",
             country1: "EUA",
             city2: "Rio de Janeiro",
@@ -49,7 +49,7 @@ i18n
           asia: {
             continentDataText:
               "A Ásia é o maior dos continentes, tanto em área como em população. Na Ásia você encontra algumas das culturas mais antigas do mundo, projetos arquitetônicos incríveis e lindas paisagens naturais. Cada região é mais fascinante que a outra!",
-            continentDataPopulation: "4.5bi",
+            continentDataPopulation: "{{total}}bi",
             city1: "Dubai",
             country1: "UAE",
             city2: "Istanbul",
@@ -62,7 +62,7 @@ i18n
           europe: {
             continentDataText:
               "A Europa é um continente cheio de história, cultura e belezas naturais. Além disso, a proximidade dos países permite explorar novas culturas e lugares em uma viagem!",
-            continentDataPopulation: "742mi",
+            continentDataPopulation: "{{total}}mi",
             city1: "Roma",
             country1: "Itália",
             city2: "Atenas",
@@ -75,7 +75,7 @@ i18n
           oceania: {
             continentDataText:
               "Oceania é uma região composta por vários grupos de ilhas no oceano Pacífico. E é claro que o continente atrai surfistas, mergulhadores e amantes de praias! A Oceania é o continente perfeito para apreciar as maravilhas da natureza.",
-            continentDataPopulation: "37mi",
+            continentDataPopulation: "{{total}}mi",
             city1: "Apia",
             country1: "Samoa",
             city2: "Suva",
@@ -107,7 +107,7 @@ i18n
           africa: {
             continentDataText:
               "The African continent is known for its natural diversity and landscapes, and is rich in history and culture. From safaris and excursions to resorts and big cities, Africa has tourism for all tastes!",
-            continentDataPopulation: "1.2bi",
+            continentDataPopulation: "{{total}}bi",
             city1: "Cairo",
             country1: "Egypt",
             city2: "Cape Town",
@@ -120,7 +120,7 @@ i18n
           america: {
             continentDataText:
               "The American continent is the largest land mass on the planet in the north-south direction. This allows for hundreds of amazing places to see, with different of climates, landscapes and culture! From ancient Peruvian cities to bustling New York, we have places for everyone.",
-            continentDataPopulation: "935mi",
+            continentDataPopulation: "{{total}}mi",
             city1: "New York",
             country1: "USA",
             city2: "Rio de Janeiro",
@@ -146,7 +146,7 @@ i18n
           europe: {
             continentDataText:
               "Europe is a continent full of history, culture and natural beauty. Plus, the proximity of countries allows you to explore new cultures and places in one trip!",
-            continentDataPopulation: "742mi",
+            continentDataPopulation: "{{total}}mi",
             city1: "Rome",
             country1: "Italy",
             city2: "Athens",
@@ -159,7 +159,7 @@ i18n
           oceania: {
             continentDataText:
               "Oceania is a region made up of several groups of islands in the Pacific Ocean. And of course the mainland attracts surfers, divers and beach lovers! Oceania is the perfect continent to enjoy the wonders of nature.",
-            continentDataPopulation: "37mi",
+            continentDataPopulation: "{{total}}mi",
             city1: "Apia",
             country1: "Samoa",
             city2: "Suva",

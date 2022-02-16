@@ -18,20 +18,23 @@ export default function Home() {
       align="center"
       m="0 auto"
       w="100%"
-      maxW={{ md:"800px", lg: "1000px" }}
+      maxW={{ md:"800px", lg: "1200px" }}
     >
       <Image p="22px 0px" src={images.logo} />
-      <Image src={images.banner} />
-      <Box p="40px 10px" maxW={{ md:"600px", lg: "800px"}}>
+      <Flex>
+          <Image src={images.banner}></Image>
+          <Text zIndex={'20'} p='0 50px' fontSize={"38px"} fontWeight={"bold"} color={"#fff"} position={'absolute'}>Continent</Text>
+      </Flex>
+      <Box p="40px 10px" maxW={{ md:"600px", lg: "1000px"}}>
         <Image 
           src={images.traveltypes}
         />
       </Box>
       <Divider maxW="60px" border={"2px"} borderColor="gray.500" />
       <Box p="40px 0px 20px 0px" align="center">
-        <Text textColor={"gray.600"} fontWeight="medium">{t('landpage.part1')}<br/>{t('landpage.part2')}<br/>{t('landpage.part3')}</Text>
+        <Text fontSize={"24"} textColor={"gray.600"} fontWeight="medium">{t('landpage.part1')}<br/>{t('landpage.part2')}<br/>{t('landpage.part3')}</Text>
       </Box>
-      <Box p="20px 0px 20px 0px" maxW={{ md:"600px", lg: "800px"}}>
+      <Box p="20px 0px 20px 0px" maxW={{ md:"600px", lg: "1000px"}}>
         <SwiperContinents />
       </Box>
       <Box p="20px 0px 40px 0px">

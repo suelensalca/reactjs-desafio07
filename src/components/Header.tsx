@@ -5,7 +5,7 @@ import Link from "next/link";
 export function Header() {
     return (
         <Link href="/">
-            <Image p="22px 0px" src={images.logo} />
+            <Image p="22px 0px" src={images.logo} alt="worldtrip-logo" />
         </Link>
     )
 }

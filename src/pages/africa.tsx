@@ -28,7 +28,7 @@ export default function Africa() {
                 numberPopulation={t('africa.continentDataPopulation', { total: 1.2 })}
             ></ContinentData>
             <Cities />
-            <Flex w="100%" flexWrap={'wrap'} p="20px 60px">
+            <Flex w="100%" flexWrap={'wrap'} p="20px 40px">
                 <Card citypic={images.cities.cairo} city={t('africa.city1')} country={t('africa.country1')} flag={images.flags.egypt}></Card>
                 <Card citypic={images.cities.capetown} city={t('africa.city2')} country={t('africa.country2')} flag={images.flags.southafrica}></Card>
                 <Card citypic={images.cities.lagos} city={t('africa.city3')} country={t('africa.country3')} flag={images.flags.nigeria}></Card>

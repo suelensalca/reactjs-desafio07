@@ -28,7 +28,7 @@ export default function Asia() {
                 numberPopulation={t('asia.continentDataPopulation', { total: 4.5 })}
             ></ContinentData>
             <Cities/>
-            <Flex w="100%" flexWrap={'wrap'} p="20px 60px">
+            <Flex w="100%" flexWrap={'wrap'} p="20px 40px">
                 <Card citypic={images.cities.dubai} city={t('asia.city1')} country={t('asia.country1')} flag={images.flags.uae}></Card>
                 <Card citypic={images.cities.istanbul} city={t('asia.city2')} country={t('asia.country2')} flag={images.flags.turkey}></Card>
                 <Card citypic={images.cities.shanghai} city={t('asia.city3')} country={t('asia.country3')} flag={images.flags.china}></Card>

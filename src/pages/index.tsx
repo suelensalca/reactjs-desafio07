@@ -22,7 +22,7 @@ export default function Home() {
       <Banner />
       <TravelTypes />
       <Divider maxW="60px" border={"2px"} borderColor="gray.500" bg={'gray.500'}/>
-      <Box p="40px 0px 20px 0px" align="center">
+      <Box p="40px 20px 20px 20px" align="center">
         <Text fontSize={{base: '14px', md: '20px', lg: '24px'}} textColor={"gray.600"} fontWeight="medium">{t('landpage.text1')}<br/>{t('landpage.text2')}<br/>{t('landpage.text3')}</Text>
       </Box>
       <SwiperContinents />

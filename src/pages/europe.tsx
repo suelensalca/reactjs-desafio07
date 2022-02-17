@@ -28,7 +28,7 @@ export default function Europe() {
                 numberPopulation={t('europe.continentDataPopulation', { total: 742 })}
             ></ContinentData>
             <Cities/>
-            <Flex w="100%" flexWrap={'wrap'} p="20px 60px">
+            <Flex w="100%" flexWrap={'wrap'} p="20px 40px">
                 <Card citypic={images.cities.rome} city={t('europe.city1')} country={t('europe.country1')} flag={images.flags.italy}></Card>
                 <Card citypic={images.cities.athens} city={t('europe.city2')} country={t('europe.country2')} flag={images.flags.greece}></Card>
                 <Card citypic={images.cities.london} city={t('europe.city3')} country={t('europe.country3')} flag={images.flags.england}></Card>

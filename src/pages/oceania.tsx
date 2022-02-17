@@ -28,7 +28,7 @@ export default function Oceania() {
                 numberPopulation={t('oceania.continentDataPopulation', { total: 37 })}
             ></ContinentData>
             <Cities/>
-            <Flex w="100%" flexWrap={'wrap'} p="20px 60px">
+            <Flex w="100%" flexWrap={'wrap'} p="20px 40px">
                 <Card citypic={images.cities.apia} city={t('oceania.city1')} country={t('oceania.country1')} flag={images.flags.samoa}></Card>
                 <Card citypic={images.cities.suva} city={t('oceania.city2')} country={t('oceania.country2')} flag={images.flags.fiji}></Card>
                 <Card citypic={images.cities.sydney} city={t('oceania.city3')} country={t('oceania.country3')} flag={images.flags.australia}></Card>

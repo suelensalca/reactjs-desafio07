@@ -7,13 +7,13 @@ export function Banner() {
 
     return (
         <Flex>
-          <Image src={images.banner}></Image>
+          <Image alt="banner" src={images.banner}></Image>
           <Text 
-            maxW={["180", "300", "600"]}
-            pt={["2", "7", "9", "14" ]}
-            pl={["2", "8", "10", "20" ]}
+            maxW={["200", "300", "600"]}
+            pt={["4", "7", "9", "14" ]}
+            pl={["4", "8", "10", "20" ]}
             zIndex={'30'}
-            fontSize={{base: '14px', md: '24px', lg: '32px' }}
+            fontSize={{base: '16px', md: '24px', lg: '32px' }}
             fontWeight={"medium"} color={"#fff"}
             position={'absolute'}
           >
@@ -24,7 +24,7 @@ export function Banner() {
             pt={["14", "20", "20", "40" ]}
             pl={["2", "8", "10", "20" ]}
             zIndex={'20'}
-            fontSize={{base: '11px', md: '18px', lg: '20px' }}
+            fontSize={{base: '0px', sm: '12px', md: '18px', lg: '20px' }}
             fontWeight={"medium"}
             color={"#fff"}
             position={'absolute'}

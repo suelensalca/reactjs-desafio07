@@ -27,7 +27,7 @@ export function Card({ citypic, city, country, flag }: CardProps) {
                     </Box>
                 </Box>
                 <Spacer />
-                <Image width={"60px"} src={flag} />
+                <Image width={"60px"} src={flag} alt={flag} />
             </Flex>
         </Box>
     )

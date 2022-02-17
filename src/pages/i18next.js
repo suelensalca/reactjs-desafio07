@@ -15,10 +15,18 @@ i18n
       pt: {
         translation: {
           landpage: {
-            part1:
+            banner1: "5 Continentes, infinitas possibilidades.",
+            banner2:
+              "Chegou a hora de tirar do papel a viagem que você sempre sonhou.",
+            travelType1: "vida noturna",
+            travelType2: "praia",
+            travelType3: "moderno",
+            travelType4: "clássico",
+            travelType5: "e mais...",
+            text1:
               "Que tal conhecer as melhores cidades para visitar em cada continente?",
-            part2: "Vamos nessa?",
-            part3: "Então escolha seu continente!",
+            text2: "Vamos nessa?",
+            text3: "Então escolha seu continente!",
           },
           africa: {
             continentDataText:
@@ -99,10 +107,17 @@ i18n
       en: {
         translation: {
           landpage: {
-            part1:
+            banner1: "5 Continents, endless possibilities.",
+            banner2: "It's time to take the trip you've always dreamed of.",
+            travelType1: "nigthtlife",
+            travelType2: "beach",
+            travelType3: "modern",
+            travelType4: "classic",
+            travelType5: "and more...",
+            text1:
               "Do you want to know the best cities to visit in each continent?",
-            part2: "Let's go?",
-            part3: "Then choose your continent!",
+            text2: "Let's go?",
+            text3: "Then choose your continent!",
           },
           africa: {
             continentDataText:

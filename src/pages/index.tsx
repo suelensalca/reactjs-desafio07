@@ -3,6 +3,8 @@ import images from '../assets/images';
 import { SwiperContinents } from "../components/SwiperContinents";
 import './i18next';
 import { useTranslation } from "react-i18next";
+import { Banner } from "../components/Banner";
+import { TravelTypes } from "../components/TravelTypes";
 
 const lngs ={
   pt: { nativeName: 'Português' },
@@ -21,18 +23,11 @@ export default function Home() {
       maxW={{ md:"800px", lg: "1200px" }}
     >
       <Image p="22px 0px" src={images.logo} />
-      <Flex>
-          <Image src={images.banner}></Image>
-          <Text zIndex={'20'} p='0 50px' fontSize={"38px"} fontWeight={"bold"} color={"#fff"} position={'absolute'}>Continent</Text>
-      </Flex>
-      <Box p="40px 10px" maxW={{ md:"600px", lg: "1000px"}}>
-        <Image 
-          src={images.traveltypes}
-        />
-      </Box>
-      <Divider maxW="60px" border={"2px"} borderColor="gray.500" />
+      <Banner />
+      <TravelTypes />
+      <Divider maxW="60px" border={"2px"} borderColor="gray.500" bg={'gray.500'}/>
       <Box p="40px 0px 20px 0px" align="center">
-        <Text fontSize={"24"} textColor={"gray.600"} fontWeight="medium">{t('landpage.part1')}<br/>{t('landpage.part2')}<br/>{t('landpage.part3')}</Text>
+        <Text fontSize={{base: '14px', md: '20px', lg: '24px'}} textColor={"gray.600"} fontWeight="medium">{t('landpage.text1')}<br/>{t('landpage.text2')}<br/>{t('landpage.text3')}</Text>
       </Box>
       <Box p="20px 0px 20px 0px" maxW={{ md:"600px", lg: "1000px"}}>
         <SwiperContinents />

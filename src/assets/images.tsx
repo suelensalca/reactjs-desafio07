@@ -1,7 +1,13 @@
 const images = {
     banner: '../../img/banner.png',
     logo: '../../img/logo.png',
-    traveltypes: '../../img/travel_types.png',
+    traveltypes: {
+      building: '../../img/travel_types/building.png',
+      cocktail: '../../img/travel_types/cocktail.png',
+      earth: '../../img/travel_types/earth.png',
+      museum: '../../img/travel_types/museum.png',
+      surf: '../../img/travel_types/surf.png',
+    },
     cities: {
         apia: '../../img/cities/apia.jpg',
         athens: '../../img/cities/athens.jpg',

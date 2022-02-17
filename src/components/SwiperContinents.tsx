@@ -1,4 +1,4 @@
-import { Image } from "@chakra-ui/react";
+import { Box, Image } from "@chakra-ui/react";
 import images from '../assets/images';
 import { useTranslation } from "react-i18next";
 
@@ -18,6 +18,7 @@ export function SwiperContinents() {
   const { t, i18n } = useTranslation();
 
   return (
+    <Box p="20px 0px 20px 0px" maxW={{ md:"600px", lg: "1000px"}}>
       <Swiper id="swiper-color" cssMode={true} navigation={true} pagination={true} mousewheel={true} keyboard={true} className="mySwiper">
         <SwiperSlide>
           <a href="/america">
@@ -50,5 +51,6 @@ export function SwiperContinents() {
           </a>
         </SwiperSlide>
       </Swiper>
+    </Box>
   )
 }

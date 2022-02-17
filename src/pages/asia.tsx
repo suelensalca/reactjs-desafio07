@@ -5,7 +5,7 @@ import { ContinentData } from "../components/ContinentData";
 import { Header } from "../components/Header";
 import images from '../assets/images';
 import { Cities } from "../components/Cities";
-import './i18next';
+import '../components/i18next';
 import { useTranslation } from "react-i18next";
 
 export default function Asia() {

@@ -1,6 +1,6 @@
 import { Box, Flex, Divider, Text } from "@chakra-ui/react";
 import { SwiperContinents } from "../components/SwiperContinents";
-import './i18next';
+import '../components/i18next';
 import { useTranslation } from "react-i18next";
 import { Banner } from "../components/Banner";
 import { TravelTypes } from "../components/TravelTypes";

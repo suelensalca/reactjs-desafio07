@@ -22,32 +22,32 @@ export function SwiperContinents() {
     <Box p="20px 0px 20px 0px" maxW={{ md:"600px", lg: "1000px"}}>
       <Swiper id="swiper-color" cssMode={true} navigation={true} pagination={true} mousewheel={true} keyboard={true} className="mySwiper">
         <SwiperSlide>
+          <Image position={"relative"} filter={"brightness(75%)"} src={images.continents.america}/>
           <Link href="/america">
-            <Image position={"relative"} filter={"brightness(75%)"} src={images.continents.america}/>
             <text className="center">{t('continentAmerica')}</text>
           </Link>
         </SwiperSlide>
         <SwiperSlide>
+          <Image filter={"brightness(75%)"} src={images.continents.asia}/>
           <Link href="/asia">
-            <Image filter={"brightness(75%)"} src={images.continents.asia}/>
             <text className="center">{t('continentAsia')}</text>
           </Link>
         </SwiperSlide>
         <SwiperSlide>
+          <Image filter={"brightness(75%)"} src={images.continents.europe}/>
           <Link href="/europe">
-            <Image filter={"brightness(75%)"} src={images.continents.europe}/>
             <text className="center">{t('continentEurope')}</text>
           </Link>
         </SwiperSlide>
         <SwiperSlide>
+          <Image filter={"brightness(75%)"} src={images.continents.africa}/>
           <Link href="africa">
-            <Image filter={"brightness(75%)"} src={images.continents.africa}/>
             <text className="center">{t('continentAfrica')}</text>
           </Link>
         </SwiperSlide>
         <SwiperSlide>
+          <Image filter={"brightness(75%)"} src={images.continents.oceania}/>
           <Link href="oceania">
-            <Image filter={"brightness(75%)"} src={images.continents.oceania}/>
             <text className="center">{t('continentOceania')}</text>
           </Link>
         </SwiperSlide>

@@ -1,4 +1,4 @@
-import { Box, Flex, Text } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 import { Card } from "../components/Card";
 import { ContinentCover } from "../components/ContinentCover";
 import { ContinentData } from "../components/ContinentData";

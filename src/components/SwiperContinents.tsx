@@ -1,5 +1,6 @@
 import { Box, Image } from "@chakra-ui/react";
 import images from '../assets/images';
+import Link from "next/link";
 import { useTranslation } from "react-i18next";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -21,34 +22,34 @@ export function SwiperContinents() {
     <Box p="20px 0px 20px 0px" maxW={{ md:"600px", lg: "1000px"}}>
       <Swiper id="swiper-color" cssMode={true} navigation={true} pagination={true} mousewheel={true} keyboard={true} className="mySwiper">
         <SwiperSlide>
-          <a href="/america">
+          <Link href="/america">
             <Image position={"relative"} filter={"brightness(75%)"} src={images.continents.america}/>
             <text className="center">{t('continentAmerica')}</text>
-          </a>
+          </Link>
         </SwiperSlide>
         <SwiperSlide>
-          <a href="/asia">
+          <Link href="/asia">
             <Image filter={"brightness(75%)"} src={images.continents.asia}/>
             <text className="center">{t('continentAsia')}</text>
-          </a>
+          </Link>
         </SwiperSlide>
         <SwiperSlide>
-          <a href="/europe">
+          <Link href="/europe">
             <Image filter={"brightness(75%)"} src={images.continents.europe}/>
             <text className="center">{t('continentEurope')}</text>
-          </a>
+          </Link>
         </SwiperSlide>
         <SwiperSlide>
-          <a href="africa">
+          <Link href="africa">
             <Image filter={"brightness(75%)"} src={images.continents.africa}/>
             <text className="center">{t('continentAfrica')}</text>
-          </a>
+          </Link>
         </SwiperSlide>
         <SwiperSlide>
-          <a href="oceania">
+          <Link href="oceania">
             <Image filter={"brightness(75%)"} src={images.continents.oceania}/>
             <text className="center">{t('continentOceania')}</text>
-          </a>
+          </Link>
         </SwiperSlide>
       </Swiper>
     </Box>

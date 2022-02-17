@@ -7,7 +7,7 @@ export function Banner() {
 
     return (
         <Flex>
-          <Image alt="banner" src={images.banner}></Image>
+          <Image alt="banner" src={images.banner} minH={"120"}></Image>
           <Text 
             maxW={["200", "300", "600"]}
             pt={["4", "7", "9", "14" ]}

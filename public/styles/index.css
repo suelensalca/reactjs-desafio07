@@ -44,10 +44,11 @@
 
 .center {
   position: absolute;
-  top: 75%;
+  top: 68%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 32px;
+  font-size: 48px;
   font-weight: 700;
   color: #fff;
+  cursor: pointer;
 }

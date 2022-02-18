@@ -1,5 +1,6 @@
 const images = {
-    banner: '../../img/banner.png',
+    background: '../../img/background.png',
+    airplane: '../../img/airplane.png',
     logo: '../../img/logo.png',
     traveltypes: {
       building: '../../img/travel_types/building.png',
